@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="../style.css">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<header class="bg-[#efeae3]">
+   <nav>
+    <div class="px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold"><a href="../index.html"><img src="../images/logo-dark.png" alt=""></a>
+        </div>
+
+       
+
+        <!-- Navbar Links for Large Screens -->
+         <div class="font-medium">
+          <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
+            <li class="relative group">
+              <a href="#" class="hover:text-gray-700">Demo</a>
+              <ul
+                class="opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 
+                       transform transition-all duration-400 ease-in-out absolute 
+                       left-0 top-full bg-white shadow-lg border rounded-md w-40"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out"
+                  >
+                    Demo 1
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out"
+                  >
+                    Demo 2
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out"
+                  >
+                    Demo 3
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            
+            
+          <li><a href="../about.html" class="px-4 py-2 hover:text-gray-700">About Us</a></li>
+          <li class="relative group">
+            <a href="#" class="hover:text-gray-700">Services</a>
+            <ul class="opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 
+            transform transition-all duration-400 ease-in-out absolute 
+            left-0 top-full bg-white shadow-lg border rounded-md w-56">
+              <li><a href="../services.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300  ease-in-out">Services</a></li>
+              <li><a href="../service-details.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Services Details</a></li>
+             
+            </ul>
+          </li>
+          <li class="relative group">
+            <a href="#" class="hover:text-gray-700">Pages</a>
+            <ul class="opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 
+            transform transition-all duration-400 ease-in-out absolute 
+            left-0 top-full bg-white shadow-lg border rounded-md w-40">
+              <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out ">Blog</a></li>
+              <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Team</a></li>
+              <li><a href="#" class="px-4 py-2 hover:text-red-500  transition-all duration-300 ease-in-out">Faq</a></li>
+              <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Portfolio</a></li>
+              <li><a href="#" class="px-4 py-2 hover:text-red-500  ease-in-out transition-all duration-300 ">Pricing</a></li>
+              <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Utilities</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="../contact.html" class="hover:text-gray-700">Contact</a></li>
+          <div class="hidden md:font-medium md:flex md:justify-between gap-x-5">
+            
+          </div>
+        </ul>
+         </div>
+        
+         <div class="hidden md:flex gap-2">
+          <button
+              class="text-[15px] border-solid border-2 border-black rounded-[25px] px-6 py-3 hover:bg-[#fe330a] hover:text-white transition-all duration-300 ease-in-out font-bold"
+            >
+              Login
+            </button>
+            <button
+              class="text-[15px] border-2 border-black rounded-[25px] px-6 py-3 bg-[#381FD1] hover:bg-[#fe330a] transition-all duration-300 ease-in-out text-[#ffff] font-bold"
+            >
+              Sign up free
+            </button>
+         </div>
+
+          <!-- Menu Button for Small Screens -->
+        <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 bg-white border-t p-4 ">
+        <li class="relative">
+          <button onclick="toggleSubMenu('demo-submenu')" class="w-full px-4 py-2 hover:text-red-500 transition-all duration-300  ease-in-out text-left">Demo</button>
+          <ul id="demo-submenu" class="hidden flex-col bg-white shadow-lg border rounded-md w-full">
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300  ease-in-out">Demo 1</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Demo 2</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out ">Demo 3</a></li>
+          </ul>
+        </li>
+        <li class="relative">
+          <a href="#"></a><button onclick="toggleSubMenu('services-submenu')" class="w-full px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out text-left">Services</button>
+          <ul id="services-submenu" class="hidden flex-col bg-white shadow-lg border rounded-md w-full">
+            <li><a href="../services.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Services</a></li>
+            <li><a href="../service-details.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Services-details</a></li>
+            
+          </ul>
+        </li>
+        <li class="relative">
+          <button onclick="toggleSubMenu('pages-submenu')" class="w-full px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out text-left">Pages</button>
+          <ul id="pages-submenu" class="hidden flex-col bg-white shadow-lg border rounded-md w-full">
+            <li><a href="../about.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Blog</a></li>
+            <li><a href="../contact.html" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Team</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Faq</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Portfolio</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Pricing</a></li>
+            <li><a href="#" class="px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Utilities</a></li>
+          </ul>
+        </li>
+        <li><a href="../about.html" class="block w-full px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">About</a></li>
+        <li><a href="../contact.html" class="block w-full px-4 py-2 hover:text-red-500 transition-all duration-300 ease-in-out">Contact</a></li>
+        <li><button class="text-[15px] border-solid border-2 border-black rounded-[10px] px-6 py-3 hover:bg-[#fe330a] w-full hover:text-white transition-all duration-300 ease-in-out font-bold">Login</button></li>
+        <li><button class="text-[15px] border-2 border-black rounded-[10px] w-full px-6 py-3 bg-[#381FD1] hover:bg-[#fe330a] transition-all duration-300 ease-in-out text-[#ffff] font-bold">Sign up free</button></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+ 
+
+
+
